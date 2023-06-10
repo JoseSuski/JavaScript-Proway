@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <title>WebService - Aula 03</title>
+</head>
+
+<body>
+    <header>
+        <h1>ViaCep</h1>
+    </header>
+    <main>
+        <div>
+            <fieldset>
+                <legend>Consulta de CEP</legend>
+                <label for="txtCEP">CEP:</label>
+                <input type="text" name="txtCEP" id="txtCEP" onblur="consultaCEP(this.value)">
+                <span id="invalido" style="color:#F00"></span>
+                <br>
+                <label for="txtLogradouro">Logradouro:</label>
+                <input type="text" name="txtLogradouro" id="txtLogradouro" disabled>
+                <label for="txtComplemento">Complemento:</label>
+                <input type="text" name="txtComplemento" id="txtComplemento" disabled>
+                <br>
+                <label for="txtBairro">Bairro:</label>
+                <input type="text" name="txtBairro" id="txtBairro" disabled>
+                <label for="txtLocalidade">Localidade:</label>
+                <input type="text" name="txtLocalidade" id="txtLocalidade" disabled>
+                <label for="txtUF">UF:</label>
+                <input type="text" name="txtUF" id="txtUF" disabled>
+                <label for="txtIBGE">IBGE:</label>
+                <input type="text" name="txtIBGE" id="txtIBGE" disabled>
+                <br>
+                <label for="txtDDD">DDD:</label>
+                <input type="text" name="txtDDD" id="txtDDD" disabled>
+
+            </fieldset>
+        </div>
+    </main>
+</body>
+
+</html>
